@@ -11,5 +11,5 @@ RUN yum install git zip unzip -y &&\
     /usr/local/php/bin/php composer.phar install && \
     rm -rf /tmp/* /var/tmp/* && yum clean all
 
-WORKDIR /var/www
+WORKDIR /data/www
 EXPOSE 80
