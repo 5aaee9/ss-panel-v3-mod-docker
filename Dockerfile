@@ -9,6 +9,9 @@ RUN yum install git zip unzip -y &&\
     git clone https://github.com/glzjin/ss-panel-v3-mod.git tmp -b new_master && mv tmp/.git . && rm -rf tmp && git reset --hard && \
     chmod -R 777 * && \
     /usr/local/php/bin/php composer.phar install && \
+    /usr/local/php/bin/php xcat initdownload && \
+    /usr/local/php/bin/php xcat initQQWry && \
+    rm -rf /data/www/public/ssr-download/.git && \
     rm -rf /tmp/* /var/tmp/* && yum clean all
 
 WORKDIR /data/www
