@@ -9,6 +9,7 @@ RUN yum install git zip unzip -y &&\
     git clone https://github.com/glzjin/ss-panel-v3-mod.git www && \
     cd /data/www && \
     chmod -R 777 * && \
+    cp /data/www/config/.config.php.example /data/www/config/.config.php && \
     /usr/local/php/bin/php composer.phar install && \
     /usr/local/php/bin/php xcat initdownload && \
     /usr/local/php/bin/php xcat initQQWry && \
