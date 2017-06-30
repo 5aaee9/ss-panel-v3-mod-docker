@@ -4,7 +4,7 @@ MAINTAINER Indexyz <jiduye@gmail.com>
 
 RUN rm -f /start.sh
 
-COPY start.sh /start.sh
+COPY run.sh /start.sh
 
 RUN yum install git zip unzip -y &&\
     rm -rf /data/www && \
