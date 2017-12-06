@@ -10,7 +10,7 @@ RUN yum install git zip unzip -y &&\
     rm -rf /data/www && \
     mkdir /data/www && \
     cd /data && \
-    git clone https://github.com/Indexyz/ss-panel-v3-mod.git -b new_master www && \
+    git clone https://github.com/Project-Hammer/ss-panel-v3-mod.git -b new_master www && \
     cd /data/www && \
     chmod -R 777 * && \
     cp /data/www/config/.config.php.example /data/www/config/.config.php && \
